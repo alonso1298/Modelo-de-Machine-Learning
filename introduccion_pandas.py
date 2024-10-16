@@ -1,9 +1,29 @@
+from funciones import *
+
 # Importamos Pandas
+import pandas as pd
+
 # Creamos una serie de números y hallamos su media
+numeros = pd.Series([1,2,3,5,67,35,235,62])
+print(numeros.mean())
+salto()
+
 # Hallamos la suma de dichos números
+print(numeros.sum())
+guiones()
+
 # Creamos una SERIE de tres colores diferentes
+colores = pd.Series(['rojo', 'amarillo', 'verde'])
+
 # Visualizamos la serie creada
+print(colores)
+guiones()
+
 # Creamos una serie con tipos de autos, y la visualizamos
+tipos_autos = pd.Series(['sedan', 'SUV', 'pick up'])
+print(tipos_autos)
+salto()
+
 # Combinamos las series de tipos de autos y colores en un DATAFRAME
 # Conectamos el cuaderno actual con nuestro Drive
 # Importar "ventas-autos.csv" y convertirlo en un nuevo DATAFRAME
