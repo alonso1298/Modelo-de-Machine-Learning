@@ -25,6 +25,9 @@ print(tipos_autos)
 salto()
 
 # Combinamos las series de tipos de autos y colores en un DATAFRAME
+tabla_autos = pd.DataFrame({'Tipo de Auto': tipos_autos, 'Color': colores})
+print(tabla_autos)
+salto()
 # Conectamos el cuaderno actual con nuestro Drive
 # Importar "ventas-autos.csv" y convertirlo en un nuevo DATAFRAME
 #Este será nuestro "Dataframe de Flujo Vehicular"
